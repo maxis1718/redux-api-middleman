@@ -9,6 +9,7 @@
   "scripts": {
     "test": "jest",
     "test:ci": "jest",
+    "test:watch": "jest --watch",
     "build": "babel src --out-dir lib",
     "clear": "rm -rf lib/*",
     "prepublish": "npm run test:ci && npm run clear && npm run build"
@@ -32,6 +33,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "bluebird": "^3.4.0",
+    "es6-promise": "^4.1.1",
     "humps": "^1.1.0",
     "jest": "^21.2.1",
     "lodash": "^4.13.1"

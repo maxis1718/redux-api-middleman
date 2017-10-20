@@ -1,6 +1,3 @@
-
-import Promise from 'bluebird'
-
 import _merge from 'lodash/merge'
 import _cloneDeep from 'lodash/cloneDeep'
 import _isFunction from 'lodash/isFunction'

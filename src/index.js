@@ -1,4 +1,4 @@
-import Promise from 'bluebird'
+import 'es6-promise/auto'
 import createRequestPromise from './createRequestPromise'
 
 export const CALL_API = Symbol('CALL_API')
@@ -59,7 +59,7 @@ export default ({
         })
       }, Promise.resolve())
 
-      overall.finally(()=> {
+      overall.then(()=> {
         resolve()
       })
       .catch((e)=> {
